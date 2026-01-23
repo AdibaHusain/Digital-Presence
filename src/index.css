@@ -30,17 +30,17 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #8DFF69, #6FE047);
+    background: linear-gradient(180deg, #334155, #0369A1);
     border-radius: 5px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, #A8FF8D, #5BC92E);
+    background: linear-gradient(180deg, #0369A1, #0E7490);
   }
 
   * {
     scrollbar-width: thin;
-    scrollbar-color: #6FE047 #0A0A0A;
+    scrollbar-color: #0369A1 #0A0A0A;
   }
 
   .hide-scrollbar {
@@ -55,8 +55,13 @@
 
 /* ✅ Animations */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from { opacity: 0;
+  transform: translateY(12px); }
+  to { opacity: 1;
+  transform: translateY(0); }
+}
+.fadeIn{
+  animation: fadeIn 0.6s ease-out forwards;
 }
 
 @keyframes pulse {
