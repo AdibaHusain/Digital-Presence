@@ -57,6 +57,24 @@ export const skills = [
     id: 10,
     name: "C++",
     icon: "Cpu",
-    level: "Intermediate",
+    level: "Advanced",
   },
+  {
+  id: 11,
+  name: "REST APIs",
+  icon: "Server",
+  level: "Intermediate",
+},
+{
+  id: 12,
+  name: "Figma",
+  icon: "Figma",
+  level: "Intermediate",
+},
+{
+  id: 13,
+  name: "Git",
+  icon: "GitBranch",
+  level: "Intermediate",
+}
 ];

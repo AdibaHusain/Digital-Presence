@@ -1,6 +1,6 @@
 import React from 'react'
 import {Download, Code2, Sparkles} from 'lucide-react'
-import {SiReact, SiTailwindcss, SiJavascript, SiNodedotjs, SiMongodb} from 'react-icons/si'
+import {SiReact, SiTailwindcss, SiJavascript, SiNodedotjs, SiMongodb, SiBootstrap} from 'react-icons/si'
 import { PERSONAL_INFO, ABOUT_STATS } from "../../utils/constants"
 import FadeIn from "../animations/FadeIn";
 import RadialGradientBackground from "../backgrounds/RadialGradientBackground";
@@ -11,6 +11,8 @@ const About = () => {
     {name: 'JavaScript', icon: SiJavascript, color: '#F7DF1E'},
     {name: 'Node.js', icon: SiNodedotjs, color: '#339933'},
     {name: 'MongoDB', icon: SiMongodb, color: '#47A248'},
+    {name: 'BootStrap', icon: SiBootstrap, color: '#7952B3'},
+
   ];
   return (
     <section id='about' className='relative py-20 bg-black overflow-hidden'>
@@ -95,7 +97,7 @@ const About = () => {
               <div className='relative group'>
                 <div className='absolute inset-0 bg-linear-to-br from-sky-900 to-cyan-900 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300'></div>
                 <div className='relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-cyan-800 transition-all duration-300 h-full'>
-                  <div className='p-3 bg-cyan-700 rounded-xl w-fit mb-4'>
+                  <div className='p-3 bg-cyan-950 rounded-xl w-fit mb-4'>
                     <Sparkles className='w-5 h-5 text-sky-600' />
                   </div>
                   <h3 className='text-base font-semibold text-white mb-2'> Clean & Readable Code</h3>
@@ -108,7 +110,7 @@ I believe good code is not just working code. I write structured, readable, and 
               <div className='relative group'>
                   <div className='absolute inset-0 bg-linear-to-br from-sky-900 to-cyan-900 rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity duration-300'></div>
                   <div className='relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-cyan-800 transition-all duration-300 h-full'>
-                    <div className='p-3 bg-cyan-700 rounded-xl w-fit mb-4'>
+                    <div className='p-3 bg-cyan-950 rounded-xl w-fit mb-4'>
                       <Download className='w-5 h-5 text-sky-600' />
                     </div>
                     <h3 className='text-base font-semibold text-white mb-2'>Performance & UX Focus</h3>
@@ -141,6 +143,41 @@ I pay attention to performance, responsiveness, and user experience—optimizing
           </div>
            </FadeIn>
         </div>
+
+        {/*Skill Grid Section*/}
+        <FadeIn delay={500}>
+          <div className='flex flex-col items-center gap-8'>
+            <div className='text-center'>
+              <h3 className='text-2xl font-normal text-white mb-2'>
+                Tech Stack & Expertise
+              </h3>
+              <p className='text-sm text-white/60'>
+                Technologies I work with to build amazing products.
+              </p>
+            </div>
+
+                <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 w-full max-w-4xl'>
+                   {skills.map((skill,index) =>(
+                    <div
+                       key={index}
+                       className='group relative bg-white/5 hover:bg-white/10 border border-white/10 hover:border-sky-700 rounded-2xl p-6 flex flex-col items-center justify-center gap-3 transition-all duration-300 hover:scale-105'>
+                          <skill.icon className='text-3xl text-sky-700' />
+                          <div className='text-sm text-white/80 font-medium text-center'>
+                            {skill.name}
+                          </div>
+
+                          {/* Hover Glow Effect*/}
+                          <div className='absolute inset-0 bg-linear-to-br 
+from-sky-200/20 to-sky-200/20 
+group-hover:from-sky-400/30 group-hover:to-sky-200/10 
+rounded-2xl transition-all duration-300'>
+</div>
+
+                        </div>
+                   ))}
+                </div>
+          </div>
+        </FadeIn>
       </div>
     </section>
   )
