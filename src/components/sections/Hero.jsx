@@ -1,6 +1,6 @@
 import { useState } from "react"
 import {ChevronDown, Star} from 'lucide-react'
-import {SiReact, SiNextdotjs, SiTailwindcss, SiNodedotjs, SiMongodb} from 'react-icons/si'
+import {SiReact, SiNextdotjs, SiTailwindcss, SiNodedotjs, SiMongodb, SiJavascript, SiBittorrent} from 'react-icons/si'
 import { PERSONAL_INFO, STATS} from "../../utils/constants"
 import {scrollToSection} from '../../hooks/UseScrollSpy';
 import FadeIn from "../animations/FadeIn";
@@ -59,12 +59,59 @@ const Hero = () => {
                 ))}
               </div>
             </FadeIn>
-          </div>          
-
           </div>
 
-        </div>
+          {/* Right Column - Image */}
+          <FadeIn delay={200}>
+            <div className="relative">
+              <div className="relative overflow-hidden rounded-2xl aspect-4/5 max-w-[500px] ml-auto group">
+                <div className="absolute inset-0 rounded-2xl overflow-hidden">
+                <div className="absolute inset-[-10px] bg-linear-to-r from-slate-600 via-sky-700 to-cyan-800
+ animate-spin-slow rounded-4xl"></div>
+              </div>
 
+              {/*Image Container */}
+              <div className="relative rounded-2xl overflow-hidden m-[1px] h-[calc(100%-2px)]">
+                <img
+                     src="/images/photo.jpeg"
+                     alt="Developer at Work"
+                     className="w-full h-full object-cover"/>
+              </div>
+
+              {/* Technology Icons */}
+              <div className="absolute bottom-6 left-6 z-20">
+                <FadeIn delay={500}>
+                  <div className="flex items-center gap-4 bg-black/40 backdrop-blur-sm border border-white/10 rounded-full px-6 py-3">
+                    <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                      <SiReact className="w-full h-full text-cyan-700"/>
+                    </div>
+                    <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                      <SiNodedotjs className="w-full h-full text-cyan-700"/>
+                    </div>
+                    <div className="w-6 h-6 flex items-center justify-center  hover:scale-110 transition-transform duration-300">
+                      <SiTailwindcss className="w-full h-full text-cyan-700"/>
+                    </div>
+                    <div className="w-6 h-6 flex items-center justify-center  hover:scale-110 transition-transform duration-300">
+                      <SiJavascript className="w-full h-full text-cyan-700"/>
+                    </div>
+                    <div className="w-6 h-6 flex items-center justify-center  hover:scale-110 transition-transform duration-300">
+                      <SiMongodb className="w-full h-full text-cyan-700"/>
+                    </div>
+                  </div>
+                </FadeIn>
+              </div>
+            </div>
+          </div>
+          </FadeIn>
+        </div>
+      </div>
+
+      {/* Scroll Down Indicator */}
+      <button
+          onClick={() => scrollToSection('about')}
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+            <ChevronDown className="w-8 h-8 text-sky-600"></ChevronDown>
+          </button>
     </section>
   )
 }
