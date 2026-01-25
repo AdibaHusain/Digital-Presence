@@ -1,6 +1,6 @@
 import React, {useState, useRef} from 'react';
 import {projects, categories } from '../../data/projects.js';
-import {Briefcase, Sparkles, Target, Globe, Palette, Zap, ChevronLeft, ChevronRight} from 'lucide-react';
+import {Briefcase, Sparkles, Target, Globe, Palette, Zap, ChevronLeft, ChevronRight, Network} from 'lucide-react';
 import ProjectCard from '../ui/ProjectCard';
 import FadeIn from '../animations/FadeIn'
 
@@ -52,6 +52,7 @@ const Projects = () => {
         'Frontend Development': Sparkles,
         'Machine Learning': Zap,
         'React+TypeScript': Palette,
+        'AI/Machine Learning': Network
     }
   return (
     <section id='projects' className='relative py-20 bg-black overflow-hidden'>

@@ -35,6 +35,15 @@ export const projects=[
         category:"React+TypeScript",
         technologies:["React","TypeScript","PrimeReact","REST API"],
         githubUrl:"https://github.com/AdibaHusain/React-Artwork-Table"
-    }
+    },
+    {
+        id: 5,
+        title: "Language Detector",
+        description: "Built a machine learning based language detection system capable of identifying text across 22 different languages. Implemented Bag of Words (BoW) for text preprocessing and feature extraction, followed by training classification models using a train-test split to evaluate performance. This project demonstrates core NLP concepts and foundational AI/ML workflows.",
+        image: "/images/LanguageDetector.png",
+        category: "AI/Machine Learning",
+        technologies: ["Python", "NLP", "Machine Learning", "Bag of Words", "Scikit-learn"],
+        githubUrl: "https://github.com/AdibaHusain/Language-Detector-using-ML-Concepts"
+},
 ]
-export const categories=['All','Web Development','Frontend Development','Machine Learning','React+TypeScript'] 
+export const categories=['All','Web Development','Frontend Development','Machine Learning','React+TypeScript','AI/Machine Learning'] 
