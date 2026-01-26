@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {Mail, MapPin, Github, Linkedin, Twitter, Send, MessageSquare} from 'lucide-react'
 import { PERSONAL_INFO, SOCIAL_LINKS } from '../../utils/constants';
 import FadeIn from '../animations/FadeIn';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
 
@@ -32,6 +33,35 @@ const Contact = () => {
             setStatus({type:'error',message:'Please enter a valid email'});
             return;
         }
+
+        emailjs.send(
+        'service_rze0gu4',      // 👈 yahan apna Service ID
+        'template_clywgy8',     // 👈 yahan apna Template ID
+        {
+            name: formData.name,
+            email: formData.email,
+            message: formData.message,
+        },
+        'J099s2K62nq_LOb6h'       // 👈 yahan apna Public Key
+    )
+    .then(() => {
+        setStatus({
+            type: 'success',
+            message: "Message sent successfully! I'll get back to you soon.",
+        });
+
+        setFormData({ name: '', email: '', message: '' });
+
+        setTimeout(() => {
+            setStatus({ type: '', message: '' });
+        }, 5000);
+    })
+    .catch(() => {
+        setStatus({
+            type: 'error',
+            message: 'Something went wrong. Please try again later.',
+        });
+    });
 
         setStatus({type:'success', message:'Message sent successfully! I\'ll get back to you soon.'});
         setFormData({name:'',email:'',message:''});
