@@ -35,14 +35,14 @@ const Contact = () => {
         }
 
         emailjs.send(
-        'service_rze0gu4',      // 👈 yahan apna Service ID
-        'template_clywgy8',     // 👈 yahan apna Template ID
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
             name: formData.name,
             email: formData.email,
             message: formData.message,
         },
-        'J099s2K62nq_LOb6h'       // 👈 yahan apna Public Key
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
     )
     .then(() => {
         setStatus({
@@ -56,17 +56,18 @@ const Contact = () => {
             setStatus({ type: '', message: '' });
         }, 5000);
     })
-    .catch(() => {
+    .catch((error) => {
+        console.error(error)
         setStatus({
             type: 'error',
             message: 'Something went wrong. Please try again later.',
         });
     });
 
-        setStatus({type:'success', message:'Message sent successfully! I\'ll get back to you soon.'});
+        /*setStatus({type:'success', message:'Message sent successfully! I\'ll get back to you soon.'});
         setFormData({name:'',email:'',message:''});
 
-        setTimeout(() => setStatus({ type:'', message:''}),5000);
+        setTimeout(() => setStatus({ type:'', message:''}),5000);*/
     };
 
     const socialIcons ={
