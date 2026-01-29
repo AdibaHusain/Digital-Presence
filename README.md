@@ -1,10 +1,10 @@
-# 🌐 Adiba Husain — Developer Portfolio
+# 🌐 Adiba Husain — Digital Presence
 
 A modern, responsive, and animated developer portfolio built to showcase my projects, skills, and journey as a **B.Tech CSE (AI) student** with a strong interest in **Web Development and AI-powered solutions**.
 
 This portfolio reflects my design sense, technical skills, and real-world project experience.
 
-# LINK FOR THE PORTFOLIO:
+### Link To Access:
 https://mydigitalpresence.netlify.app/
 ---
 
