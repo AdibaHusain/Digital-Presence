@@ -4,7 +4,7 @@ export const PERSONAL_INFO = {
   email: "adibaknp@gmail.com",
   location: "Kanpur, India",
   tagline: "Passionate Web Developer | AI Enthusiast | Problem Solver",
-  resume: "/Adiba_Husain_resume(6).pdf",
+  resume: "/Adiba_Husain_resume(7).pdf",
   bio: [
   "Computer Science undergraduate specializing in Artificial Intelligence, with a strong interest in building impactful digital products.",
   "Passionate about web development, problem-solving, and transforming ideas into clean, user-focused experiences.",
