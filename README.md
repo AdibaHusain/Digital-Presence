@@ -1,16 +1,82 @@
-# React + Vite
+# 🌐 Adiba Husain — Digital Presence
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and animated developer portfolio built to showcase my projects, skills, and journey as a **B.Tech CSE (AI) student** with a strong interest in **Web Development and AI-powered solutions**.
 
-Currently, two official plugins are available:
+This portfolio reflects my design sense, technical skills, and real-world project experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Link To Access:
+https://mydigitalpresence.netlify.app/
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🎨 Clean & modern UI with smooth animations  
+- ⚡ Fully responsive (desktop, tablet & mobile)  
+- 🧩 Component-based architecture using React  
+- 🌈 Elegant gradients & hover effects  
+- 📂 Dedicated project showcase section  
+- 📬 Functional contact form with validation  
+- 🚀 Optimized for performance and scalability  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧭 Sections Overview
+
+### 🏠 Home
+- Hero section with introduction
+- Animated text & subtle motion effects
+- Quick overview of who I am and what I do
+
+### 👩‍💻 About Me
+- My background as a CSE (AI) student
+- Interests in Web Development, AI & problem-solving
+- Clear focus on learning through projects
+
+### 🛠️ Skills
+- Frontend technologies (HTML, CSS, JavaScript, React)
+- Styling & UI (Tailwind CSS)
+- Tools & workflow (Git, GitHub)
+- AI & ML exposure through real projects
+
+- ### 🛠️ Certificates
+- Showcasing several indusatry level experiences through my certificates.
+
+### 📁 Projects
+- Real-world and academic projects
+- Each project includes:
+  - Description
+  - Tech stack used
+  - Visual previews
+- Projects like:
+  - **SafeCrowd AI** (AI for Societal Good)
+  - **Language Detector** 
+  ...And much more.
+
+### 📞 Contact
+- Clean contact form with validations
+- Social media & professional links
+- Easy way to reach out for opportunities & collaboration
+
+---
+
+## 🧑‍💻 Tech Stack Used
+
+### Frontend
+- **React.js** – Component-based UI development
+- **Tailwind CSS** – Utility-first styling
+- **JavaScript (ES6+)**
+
+### UI & Animations
+- **Lucide React Icons**
+- Custom animation components (FadeIn, hover effects)
+
+### Tools
+- **Git & GitHub** – Version control
+- **VS Code** – Development environment
+
+---
+
+## 📸 Screenshots
+
+<img width="1859" height="911" alt="image" src="https://github.com/user-attachments/assets/9fdd2421-1dfb-45bf-8546-7120672e8373" />
+
