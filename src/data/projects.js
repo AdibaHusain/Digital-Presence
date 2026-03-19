@@ -45,5 +45,15 @@ export const projects=[
         technologies: ["Python", "NLP", "Machine Learning", "Bag of Words", "Scikit-learn"],
         githubUrl: "https://github.com/AdibaHusain/Language-Detector-using-ML-Concepts"
 },
+    {
+        id: 6,
+        title: "Mock Mind AI",
+        description: "MockMind AI is a full-stack AI-powered mock interview platform where users answer role-specific questions verbally and receive instant scores, feedback, and a model answer for every response — powered by Groq's LLaMA 3.3 70B model. Built with the MERN stack, it features real-time speech recognition, JWT authentication, and an end-to-end performance report after each session.",
+        image: "/images/MockMind AI.png",
+        category: "Web Development",
+        technologies: ["React", "Web Speech API", "Node+Express", "Mongo DB", "JSON Web Tokens", "Groq LLaMA 3.3 70B"],
+        githubUrl: "https://github.com/AdibaHusain/AI-Mock-Interview"
+
+    },
 ]
 export const categories=['All','Web Development','Frontend Development','Machine Learning','React+TypeScript','AI/Machine Learning'] 
